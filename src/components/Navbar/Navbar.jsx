@@ -34,7 +34,7 @@ const Navbar = () => {
         <ul>
           <Link to={'/'}> <li>Home</li></Link>
           <Link to={'/features'}><li>Features</li></Link>
-          <li>Pricing</li>
+          <li>Price</li>
           <li>ContactUs</li>
         </ul>
         <div className='nav-right'>
