@@ -1,0 +1,112 @@
+.features-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    text-align: center;
+    gap: 20px;
+}
+.first h2{
+    margin-top: 150px;
+    font-size: 70px;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+.first p{
+    font-size:22px;
+    color: #f9efee
+}
+.second{
+    float: left;
+    margin-top: 150px;
+    margin-right: 58%;
+    margin-left: 200px;
+    text-align: center;
+}
+.second h2{
+    font-size: 30px;
+    padding: 10px;
+    color: #6f7bca
+}
+.second p{
+    color: #9DB0CE
+}
+.third{
+    float: right;
+    margin-left: 58%;
+    margin-right: 200px;
+    text-align: center;
+}
+.third h2{
+    font-size: 30px;
+    padding: 10px;
+    color: #6f7bca
+}
+.third p{
+    color: #9DB0CE
+}
+.fourth{
+    float: left;
+    margin-right: 58%;
+    margin-left: 200px;
+    text-align: center;
+}
+.fourth h2{
+    font-size: 30px;
+    padding: 10px;
+    color: #6f7bca
+}
+.fourth p{
+    color: #9DB0CE
+}
+.fifth{
+    float: right;
+    margin-left: 58%;
+    margin-right: 200px;
+    text-align: center;
+}
+.fifth h2{
+    font-size: 30px;
+    padding: 10px;
+    color: #6f7bca
+}
+.fifth p{
+    color: #9DB0CE
+}
+.sixth{
+    float: left;
+    margin-right: 58%;
+    margin-left: 200px;
+    text-align: center;
+}
+.sixth h2{
+    font-size: 30px;
+    padding: 10px;
+    color: #6f7bca
+}
+.sixth p{
+    color: #9DB0CE
+}
+.seventh{
+    float: right;
+    margin-left: 58%;
+    margin-right: 200px;
+    text-align: center;
+    margin-bottom: 300px;
+}
+.seventh h2{
+    font-size: 30px;
+    padding: 10px;
+    color: #6f7bca
+}
+.seventh p{
+    color: #9DB0CE
+}
