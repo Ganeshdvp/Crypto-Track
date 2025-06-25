@@ -23,6 +23,10 @@
 .navbar li{
     cursor: pointer;
 }
+.navbar li:hover{
+    color: rgb(216, 0, 0);
+    transform: scale(1.1);
+}
 .nav-right{
     display: flex;
     align-items: center;
@@ -55,6 +59,25 @@
 .navbar button img{
     width: 14px;
 }
+.navbar button:hover{
+    transform: scale(1.1);
+}
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
 @media (max-width: 900px){
     .navbar{
         padding: 20px 8%;

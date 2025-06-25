@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Add to SignupForm.css */
+.signIn-form-modal {
+ background: linear-gradient(#000000,#720202);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  width: 25vw;
+  animation: fadeIn 0.8s ease-in-out;
+}
+.signIn-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+.signIn-form h3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signIn-form label{
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+}
+
+.signIn-form input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.3rem;
+}
+.signIn-validations{
+    color: red;
+    font-size: 0.55rem;
+    margin-top: -8px;
+}
+.signIn-form-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.signIn-form-buttons button{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #a90606;
+  color: #fff;
+  cursor: pointer;
+}
+.signIn-form-buttons button:hover{
+    background-color: #790101;
+}
+
+.dont-have-account{
+    font-size: 0.7rem;
+    margin-left: 28%;
+}
+.dont-have-account a{
+    color: #ff0000;
+}
+.dont-have-account a:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* optional */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -22,7 +22,7 @@ ul{
     list-style: none;
 }
 .footer{
-    background-color: #280457;
+    background: linear-gradient(#720202,#000000);
     padding: 70px 0;
 }
 .footer-col{
@@ -83,7 +83,7 @@ ul{
     padding: 10px;
     font-size: 13px;
     text-align: center;
-    background-color: #280457;
+    background-color: #000000;
     color: #bbbbbb;
 }
 /* responsive */

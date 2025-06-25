@@ -4,10 +4,17 @@ import logo from '../../assets/logo.png';
 import arrow_icon from '../../assets/arrow-icon.jpg'
 import { CoinContext } from '../../context/CoinContext'
 import { Link } from 'react-router-dom';
-
+import SignUp from '../../Pages/SignUp/SignUp';
+import SignIn from '../../Pages/SignIn/SignIn';
 
 const Navbar = () => {
   const { setCurrency } = useContext(CoinContext);
+
+    const [showSignUp, setShowSignUp] = useState(false);
+    const [showSignIn, setShowSignIn] = useState(false);
+
+
+
   const currencyHandler = (e) => {
     switch (e.target.value) {
       case 'usd':
@@ -35,7 +42,7 @@ const Navbar = () => {
           <Link to={'/'}> <li>Home</li></Link>
           <Link to={'/features'}><li>Features</li></Link>
           <li>Price</li>
-          <li>ContactUs</li>
+          <Link to= {'/contact'}><li>ContactUs</li></Link>
         </ul>
         <div className='nav-right'>
           <select onChange={currencyHandler}>
@@ -43,9 +50,24 @@ const Navbar = () => {
             <option value='inr'>INR</option>
             <option value='eur'>EUR</option>
           </select>
-          <button>Sign Up <img src={arrow_icon} /></button>
+          <button onClick={()=> {setShowSignUp(true); setShowSignIn(false)}}>Sign Up <img src={arrow_icon} /></button>
         </div>
       </div>
+
+      {showSignUp && (
+        <div className="form-overlay">
+          {
+            showSignIn ? (
+              <SignIn onClose= {()=> setShowSignUp(false)} onShowSignUp = {()=> setShowSignIn(false)} />
+            ) : (
+              <SignUp 
+              onClose={() => setShowSignUp(false)} 
+              onShowSignIn={() => setShowSignIn(true)} 
+            />
+            )
+          }
+        </div>
+      )}
     </>
   )
 }

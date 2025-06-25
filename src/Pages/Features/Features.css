@@ -3,6 +3,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+     animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* optional */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .first{
     display: flex;
@@ -34,10 +45,11 @@
 .second h2{
     font-size: 30px;
     padding: 10px;
-    color: #6f7bca
+    color: #931919;
+    animation: fadeInLeftToRight 0.8s ease-in-out;
 }
 .second p{
-    color: #9DB0CE
+    color: #9DB0CE;
 }
 .third{
     float: right;
@@ -48,7 +60,7 @@
 .third h2{
     font-size: 30px;
     padding: 10px;
-    color: #6f7bca
+    color: #931919
 }
 .third p{
     color: #9DB0CE
@@ -62,7 +74,7 @@
 .fourth h2{
     font-size: 30px;
     padding: 10px;
-    color: #6f7bca
+    color: #931919
 }
 .fourth p{
     color: #9DB0CE
@@ -76,7 +88,7 @@
 .fifth h2{
     font-size: 30px;
     padding: 10px;
-    color: #6f7bca
+    color: #931919
 }
 .fifth p{
     color: #9DB0CE
@@ -90,7 +102,7 @@
 .sixth h2{
     font-size: 30px;
     padding: 10px;
-    color: #6f7bca
+    color: #931919
 }
 .sixth p{
     color: #9DB0CE
@@ -105,7 +117,7 @@
 .seventh h2{
     font-size: 30px;
     padding: 10px;
-    color: #6f7bca
+    color: #931919
 }
 .seventh p{
     color: #9DB0CE

@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Add to SignupForm.css */
+.signup-form-modal {
+ background: linear-gradient(#000000,#720202);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  width: 30vw;
+  animation: fadeIn 0.8s ease-in-out;
+}
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+.signup-form h3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form label{
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+}
+
+.signup-form input {
+  display: block;
+  width: 100%;
+ margin-bottom: 0.3rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.validations{
+    color: red;
+    font-size: 0.55rem;
+    margin-top: -8px;
+}
+
+.form-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form-buttons button{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #a90606;
+  color: #fff;
+  cursor: pointer;
+}
+.form-buttons button:hover{
+    background-color: #790101;
+}
+
+.already-have-account{
+    font-size: 0.7rem;
+    margin-left: 28%;
+}
+.already-have-account a{
+    color: #ff0000;
+}
+.already-have-account a:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* optional */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
