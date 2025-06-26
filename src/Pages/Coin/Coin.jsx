@@ -37,11 +37,31 @@ const Coin = () => {
       fetchHistoricalData();
     },[currency]
   )
-  if(coinData, historicalData){
+
+  // only render when both coinData and historicalData and valid.
+  if (
+    !coinData ||
+    !historicalData ||
+    !coinData.image ||
+    !coinData.symbol ||
+    !coinData.name ||
+    !coinData.market_data ||
+    !coinData.market_data.current_price ||
+    !coinData.market_data.market_cap ||
+    !coinData.market_data.high_24h ||
+    !coinData.market_data.low_24h
+  ) {
+    return (
+      <div className="spinner">
+        <div className="spin"></div>
+      </div>
+    );
+  }
+  
     return (
       <div className='coin'>
         <div className="coin-name">
-          <img src={coinData.image.large} alt="" />
+          <img src={coinData.image.large} alt="coin-graph" />
           <p><b>{coinData.name} ({coinData.symbol.toUpperCase()})</b></p>
         </div>
         <div className="coin-chart">
@@ -70,15 +90,7 @@ const Coin = () => {
           </ul>
         </div>
       </div>
-    )
-  }
-  else{
-    return(
-      <div className="spinner">
-        <div className="spin"></div>
-      </div>
-    )
-  }
+    );
 }
 
 export default Coin

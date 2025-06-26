@@ -122,3 +122,93 @@
 .seventh p{
     color: #9DB0CE
 }
+
+
+
+/* Responsive styles for Features page */
+@media (max-width: 1200px) {
+   .first {
+    width: 100%;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 0 40px;
+  }
+  .first h2 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  .first p {
+    font-size: 16px;
+  }
+  .second, .third, .fourth, .fifth, .sixth, .seventh {
+    width: 100%;
+    margin: 40px 0;
+    padding: 0 40px;
+  }
+  .second h2, .third h2, .fourth h2, .fifth h2, .sixth h2, .seventh h2 {
+    font-size: 20px;
+    padding: 4px;
+  }
+  .features-container {
+    padding: 0 2px;
+  }
+}
+
+@media (max-width: 900px) {
+   .first {
+    width: 100%;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 0 40px;
+  }
+  .first h2 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  .first p {
+    font-size: 16px;
+  }
+  .second, .third, .fourth, .fifth, .sixth, .seventh {
+    width: 100%;
+    margin: 40px 0;
+    padding: 0 100px;
+  }
+  .second h2, .third h2, .fourth h2, .fifth h2, .sixth h2, .seventh h2 {
+    font-size: 20px;
+    padding: 4px;
+  }
+  .features-container {
+    padding: 0 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .first {
+    width: 100%;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 0 40px;
+  }
+  .first h2 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  .first p {
+    font-size: 16px;
+  }
+  .second, .third, .fourth, .fifth, .sixth, .seventh {
+    width: 100%;
+    margin: 40px 0;
+    padding: 0 40px;
+  }
+  .second h2, .third h2, .fourth h2, .fifth h2, .sixth h2, .seventh h2 {
+    font-size: 20px;
+    padding: 4px;
+  }
+  .features-container {
+    padding: 0 2px;
+  }
+}

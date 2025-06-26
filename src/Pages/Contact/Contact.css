@@ -81,3 +81,53 @@
     margin-top: -7px;
     margin-left: 5px;
 }
+
+
+
+/* Responsive styles for Contact page */
+@media (max-width: 900px) {
+  .contact-form-card {
+    width: 90vw;
+    height: auto;
+    padding: 15px;
+  }
+  .contact-form {
+    width: 90vw;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-from-container {
+    margin-top: 10px;
+    padding: 0 10vw;
+  }
+  .contact-form-card {
+    width: 100vw;
+    min-width: unset;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 18px;
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 8px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 7px;
+  }
+  .contact-form button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+  .contact-form-card h3 {
+    font-size: 1.3rem;
+  }
+}
