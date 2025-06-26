@@ -86,3 +86,54 @@
     transform: translateY(0);
   }
 }
+
+
+/* Responsive design */
+@media screen and (max-width:568px){
+  .signIn-form-modal{
+    width: 70vw;
+  }
+  .signIn-form{
+    width: 100%;
+  }
+  .dont-have-account{
+    text-align: center;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-width:568px) and (max-width:768px){
+  .signIn-form-modal{
+    width: 400px;
+  }
+  .signIn-form{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:900px) {
+  .signIn-form-modal{
+    width: 400px;
+  }
+  .signIn-form{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:900px) and (max-width:1024px) {
+  .signIn-form-modal{
+    width: 400px;
+  }
+  .signIn-form{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1246px) {
+  .signIn-form-modal{
+    width: 400px;
+  }
+  .signIn-form{
+    width: 100%;
+  }
+}

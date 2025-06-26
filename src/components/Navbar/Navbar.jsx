@@ -60,13 +60,13 @@ const Navbar = () => {
         <span></span>
       </div>
         <ul ref={menuRef} className={menuOpen ? 'open' : ''}>
-          <Link to={'/'}> <li>Home</li></Link>
-          <Link to={'/features'}><li>Features</li></Link>
-          <li>Price</li>
-          <Link to= {'/contact'}><li>ContactUs</li></Link>
+          <Link to={'/'}> <li onClick={()=> setMenuOpen(false)}>Home</li></Link>
+          <Link to={'/features'}><li onClick={()=> setMenuOpen(false)}>Features</li></Link>
+          <li onClick={()=> setMenuOpen(false)}>Price</li>
+          <Link to= {'/contact'}><li onClick={()=> setMenuOpen(false)}>ContactUs</li></Link>
           {/* Move nav-right here for mobile */}
           <li className="nav-right-mobile">
-            <select onChange={currencyHandler}>
+            <select onChange={currencyHandler} >
               <option value='usd'>USD</option>
               <option value='inr'>INR</option>
               <option value='eur'>EUR</option>
