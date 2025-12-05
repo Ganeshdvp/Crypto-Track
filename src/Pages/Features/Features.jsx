@@ -6,7 +6,7 @@ const Features = () => {
         <>
             <div className='features-container'>
                 <div className='first'>
-                    <h2>Cryptocurrency features</h2>
+                    <h3>Cryptocurrency features</h3>
                     <p>Cryptocurrencies are a digital representation of value considered by their holders as a means of payment. They owe their high popularity to aspects which traditional currencies lack. Learn about their key features.</p>
                 </div>
                 <div className='second'>
