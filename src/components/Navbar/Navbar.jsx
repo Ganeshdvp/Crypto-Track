@@ -50,7 +50,7 @@ const Navbar = () => {
     <>
       <div className='navbar'>
         <Link to={'/'}>
-          <img src={logo} alt='' className='logo' />
+          <img src={logo} alt='logo' className='logo' />
           <h2>CryptoTrack</h2>
         </Link>
         {/* Hamburger icon */}
@@ -60,24 +60,31 @@ const Navbar = () => {
         <span></span>
       </div>
         <ul ref={menuRef} className={menuOpen ? 'open' : ''}>
-          <Link to={'/'}> <li onClick={()=> setMenuOpen(false)}>Home</li></Link>
-          <Link to={'/features'}><li onClick={()=> setMenuOpen(false)}>Features</li></Link>
-          <li onClick={()=> setMenuOpen(false)}>Price</li>
-          <Link to= {'/contact'}><li onClick={()=> setMenuOpen(false)}>ContactUs</li></Link>
-          {/* Move nav-right here for mobile */}
-          <li className="nav-right-mobile">
-            <select onChange={currencyHandler} >
-              <option value='usd'>USD</option>
-              <option value='inr'>INR</option>
-              <option value='eur'>EUR</option>
-            </select>
-            <button onClick={() => { setShowSignUp(true); setShowSignIn(false); setMenuOpen(false); }}>
-              Sign Up <img src={arrow_icon} />
-            </button>
-          </li>
-        </ul>
+  <li onClick={()=> setMenuOpen(false)}>
+    <Link to={'/'}>Home</Link>
+  </li>
+  <li onClick={()=> setMenuOpen(false)}>
+    <Link to={'/features'}>Features</Link>
+  </li>
+  <li onClick={()=> setMenuOpen(false)}>Price</li>
+  <li onClick={()=> setMenuOpen(false)}>
+    <Link to={'/contact'}>ContactUs</Link>
+  </li>
+  {/* Move nav-right here for mobile */}
+  <li className="nav-right-mobile">
+    <label htmlFor="currency-select" className="sr-only">Select Currency</label>
+    <select id="currency-select" onChange={currencyHandler}>
+      <option value='usd'>USD</option>
+      <option value='inr'>INR</option>
+      <option value='eur'>EUR</option>
+    </select>
+    <button onClick={() => { setShowSignUp(true); setShowSignIn(false); setMenuOpen(false); }}>
+      Sign Up <img src={arrow_icon} alt='Up-arrow'/>
+    </button>
+  </li>
+</ul>
         <div className='nav-right'>
-          <select onChange={currencyHandler}>
+          <select onChange={currencyHandler} aria-label='select cryptocoin'>
             <option value='usd'>USD</option>
             <option value='inr'>INR</option>
             <option value='eur'>EUR</option>

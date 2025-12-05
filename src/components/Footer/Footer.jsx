@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="footer-col">
-            <h4>company</h4>
+            <p>company</p>
             <ul>
               <li><a href='#'>about Us</a></li>
               <li><a href='#'>our services</a></li>
@@ -17,7 +17,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>get help</h4>
+            <p>get help</p>
             <ul>
             <li><a href='#'>FAQ</a></li>
               <li><a href='#'>shipping</a></li>
@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>buy coins</h4>
+            <p>buy coins</p>
             <ul>
             <li><a href='#'>payment</a></li>
               <li><a href='#'>track</a></li>
@@ -37,12 +37,12 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>follow Us</h4>
+            <p>follow Us</p>
             <div className='social-links'>
-              <a href='#'><i className='fab fa-facebook-f'></i></a>
-              <a href='#'><i className='fab fa-twitter'></i></a>
-              <a href='#'><i className='fab fa-instagram'></i></a>
-              <a href='#'><i className='fab fa-linkedin-in'></i></a>
+              <a href='#' aria-label='facebook'><i className='fab fa-facebook-f'></i></a>
+              <a href='#' aria-label='twitter'><i className='fab fa-twitter'></i></a>
+              <a href='#' aria-label='instagram'><i className='fab fa-instagram'></i></a>
+              <a href='#' aria-label='linkedin'><i className='fab fa-linkedin-in'></i></a>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ import Contact from './Pages/Contact/Contact';
 
 const App = () => {
   return (
-    <div className='app'>
+    <main className='app'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -18,7 +18,7 @@ const App = () => {
         <Route path='/contact' element= {<Contact/>}/>
       </Routes>
       <Footer/>
-    </div>
+    </main>
   )
 }
 
